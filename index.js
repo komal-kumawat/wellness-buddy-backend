@@ -7,9 +7,7 @@ const userRoutes = require("./route/userRoutes");
 
 dotenv.config();
 const app = express();
-app.use(cors({
-    origin:" https://komal-kumawat.github.io/wellness-buddy-frontend/"
-}));
+app.use(cors());
 app.use(bodyParser.json());
 app.use("/api/auth", userRoutes); 
 
