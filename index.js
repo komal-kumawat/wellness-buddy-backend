@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-app.use("/api/auth", userRoutes); 
+app.use( userRoutes); 
 
 const PORT = 5000;
 const MONGO_URL = "mongodb+srv://komalK:komal%40123@atlascluster.fukzabb.mongodb.net/WellnessBuddy";
